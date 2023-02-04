@@ -20,10 +20,10 @@ jobs:
    
     - name: docker build nodejs
       run: |
-        docker build -t rakeshkrishna/nodejs:1.0.0
+        docker build ./nodejs -t rakeshkrishna/nodejs:1.0.0
     - name: docker build python
       run: |
-        docker build  -t rakeshkrishna/python:1.0.0
+        docker build ./python -t rakeshkrishna/python:1.0.0
     
     - name: docker push
       run: |
