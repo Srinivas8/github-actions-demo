@@ -19,13 +19,13 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build csharp
       run: |
-        docker build ./c# -t rakeshkrishna/csharp
+        docker build ./c#  -t rakeshkrishna/csharp
     - name: docker build nodejs
       run: |
-        docker build ./nodejs -t rakeshkrishna/nodejs
+        docker build ./nodejs  -t rakeshkrishna/nodejs
     - name: docker build python
       run: |
-        docker build ./python -t rakeshkrishna/python
+        docker build ./python  -t rakeshkrishna/python
     - name: docker push
       run: |
         docker push rakeshkrishna/csharp
