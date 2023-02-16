@@ -9,13 +9,13 @@ jobs:
         node_version: [16, 18, 19]
         include:
           - os: ubuntu-latest
-            node_version: 22
+            node_version: 18
             ubuntu_20: "true"
         exclude:
           - os: ubuntu-latest
-            node_version: 21
+            node_version: 16
           - os: macos-latest
-            node_version: 20
+            node_version: 14
     runs-on: ${{ matrix.os }}
     env:
       UBUNTU_8: ${{ matrix.ubuntu_20 }}
