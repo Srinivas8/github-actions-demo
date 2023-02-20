@@ -28,4 +28,4 @@ jobs:
       - name: After Setup-node node version
         run: |
           node -v
-          echo $UBUNTU_8
+          echo $UBUNTU_20
